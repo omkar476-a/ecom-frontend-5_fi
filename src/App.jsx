@@ -11,7 +11,8 @@ import UpdateProduct from "./components/UpdateProduct";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import WTPartsList from "./components/WTPartsList";
+import Login from "./components/Login";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -52,6 +53,8 @@ function App() {
           <Route path="/add_product" element={<AddProduct />} />
           <Route path="/product" element={<Product  />} />
           <Route path="product/:id" element={<Product  />} />
+          <Route path="/wtparts" element={<WTPartsList />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/product/update/:id" element={<UpdateProduct />} />
         </Routes>

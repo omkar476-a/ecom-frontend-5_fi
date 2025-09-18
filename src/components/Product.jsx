@@ -147,20 +147,20 @@ const Product = () => {
 
           <button
             onClick={handlAddToCart}
-            disabled={!product.productAvailable}
+            disabled={!product.available}
             style={{
               padding: "1rem 2rem",
               fontSize: "1rem",
-              backgroundColor: product.productAvailable ? "#6a994e" : "#ccc",
+              backgroundColor: product.available ? "#6a994e" : "#ccc",
               color: "white",
               border: "none",
               borderRadius: "10px",
-              cursor: product.productAvailable ? "pointer" : "not-allowed",
+              cursor: product.available ? "pointer" : "not-allowed",
               marginBottom: "1rem",
               transition: "background 0.3s",
             }}
           >
-            {product.productAvailable ? "Add to Cart" : "Out of Stock"}
+            {product.available ? "Add to Cart" : "Out of Stock"}
           </button>
 
           <div style={{ display: "flex", gap: "1rem" }}>

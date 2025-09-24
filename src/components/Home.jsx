@@ -162,6 +162,7 @@ const Home = ({ selectedCategory }) => {
                       onClick={(e) => {
                         e.preventDefault();
                         addToCart(product);
+                        alert(`${product.name} added to cart successfully!`);
                       }}
                       disabled={!available}
                     >

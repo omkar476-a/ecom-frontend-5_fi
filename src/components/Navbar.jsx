@@ -87,6 +87,10 @@ const Navbar = ({ onSelectCategory }) => {
                   ))}
                 </ul>
               </li>
+
+              {/* ✅ Added Login & Register Links */}
+              <li className="nav-item"><a className="nav-link" href="/login">Login</a></li>
+              <li className="nav-item"><a className="nav-link" href="/register">Register</a></li>
             </ul>
 
             <button className="theme-btn" onClick={toggleTheme}>

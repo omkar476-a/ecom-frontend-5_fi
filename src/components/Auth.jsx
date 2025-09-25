@@ -14,8 +14,9 @@ const Auth = ({ setIsAuthenticated }) => {
     setMessage(""); // reset message
 
     const url = isLogin
-      ? "http://localhost:8080/auth/login"
-      : "http://localhost:8080/auth/register";
+      ? "https://spring-boot-project-2.onrender.com/auth/login"
+      : "https://spring-boot-project-2.onrender.com/auth/register";
+     
 
     try {
       const res = await axios.post(url, { username, password });

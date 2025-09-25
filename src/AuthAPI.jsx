@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Create an Axios instance for authentication API
 const AuthAPI = axios.create({
-  baseURL: "http://localhost:8080/auth", // your backend base URL
+  baseURL: "https://spring-boot-project-2.onrender.com/auth", // your backend base URL
 });
 
 // Remove default Authorization header (in case set globally elsewhere)

@@ -23,7 +23,7 @@ const Navbar = ({ onSelectCategory }) => {
     if (value.length > 0) {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/product/search?keyword=${value}`
+          `http://spring-boot-project-2.onrender.com/api/product/search?keyword=${value}`
         );
         setSearchResults(response.data);
         setNoResults(response.data.length === 0);
